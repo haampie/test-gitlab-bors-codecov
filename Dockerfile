@@ -29,7 +29,7 @@ RUN apt-get update -qq && \
     apt-get install -qq --no-install-recommends \
       cmake \
       curl \
-      gcc \
+      lcov \
       ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
