@@ -16,4 +16,5 @@ add_executable(another another.cc)
 
 if (BUILD_TESTING)
     add_test(NAME my_test COMMAND my_test)
+    add_test(NAME another COMMAND another)
 endif()
