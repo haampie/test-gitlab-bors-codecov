@@ -28,6 +28,7 @@ FROM ubuntu:18.04
 RUN apt-get update -qq && \
     apt-get install -qq --no-install-recommends \
       cmake \
+      git \
       curl \
       lcov \
       ca-certificates && \
