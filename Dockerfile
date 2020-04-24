@@ -10,6 +10,8 @@ RUN apt-get update -qq && \
       lcov \
       wget \
       git \
+      curl \
+      ca-certificates \
       && \
     rm -rf /var/lib/apt/lists/*
 
@@ -20,4 +22,4 @@ RUN mkdir build && \
     cmake -DENABLE_CODECOV=ON ../project && \
     make -j$(nproc)
 
-WORKDIR /root/build
+WORKDIR /root/project
